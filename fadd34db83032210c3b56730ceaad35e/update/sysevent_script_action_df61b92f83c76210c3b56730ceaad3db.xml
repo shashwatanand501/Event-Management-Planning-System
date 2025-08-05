@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>teamdev.codereview.cancelled</event_name>
+        <name>Send Outbound Task REST</name>
+        <order>10</order>
+        <script><![CDATA[var rm = new sn_ws.RESTMessageV2('Notify External - Task', 'Send Task');
+rm.setStringParameterNoEscape('task_name', current.u_task_name);
+rm.setStringParameterNoEscape('event_id', current.event_id);
+rm.setStringParameterNoEscape('assigned_to', current.assignment_to.getDisplayValue());
+rm.setStringParameterNoEscape('due_date', current.due_date);
+
+var response = rm.execute();
+gs.info("Task Notification Sent: " + response.getBody());
+]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 05:14:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>df61b92f83c76210c3b56730ceaad3db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Send Outbound Task REST</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_update_name>sysevent_script_action_df61b92f83c76210c3b56730ceaad3db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 05:14:05</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope, $http) {
+  $scope.selectedSection = null;
+
+  $scope.showSection = function(section) {
+    $scope.selectedSection = section;
+  };
+
+  // Separate models
+  $scope.event = {};
+  $scope.task = {};
+  $scope.attendee = {};
+  $scope.feedback = {};
+  $scope.venue = {};
+
+  $scope.submitEvent = function() {
+    var ga = new GlideAjax('CreateEventProcessor');
+    ga.addParam('sysparm_name', 'createEventRecord');
+    ga.addParam('sysparm_event_name', $scope.event.event_name);
+    ga.addParam('sysparm_event_date', $scope.event.event_date);
+    ga.addParam('sysparm_location', $scope.event.location);
+    ga.addParam('sysparm_contact_person', $scope.event.contact_person);
+    ga.addParam('sysparm_contact_number', $scope.event.contact_number);
+    ga.addParam('sysparm_email', $scope.event.email);
+    ga.addParam('sysparm_status', $scope.event.status);
+
+    ga.getXMLAnswer(function(response) {
+      console.log('Event Response: ' + response);
+      alert(response == 'success' ? 'Event created!' : 'Event failed: ' + response);
+    });
+  };
+
+  $scope.submitTask = function() {
+    var ga = new GlideAjax('CreateTaskProcessor');
+    ga.addParam('sysparm_name', 'createTaskRecord');
+    ga.addParam('sysparm_task_name', $scope.task.task_name);
+    ga.addParam('sysparm_due_date', $scope.task.due_date);
+    ga.addParam('sysparm_event_id', $scope.task.event_id);
+    ga.addParam('sysparm_assignment_to', $scope.task.assignment_to);
+
+    ga.getXMLAnswer(function(response) {
+      console.log('Task Response: ' + response);
+      alert(response == 'success' ? 'Task created!' : 'Task failed: ' + response);
+    });
+  };
+
+  $scope.submitAttendee = function() {
+    var ga = new GlideAjax('CreateAttendeeProcessor');
+    ga.addParam('sysparm_name', 'createAttendeeRecord');
+    ga.addParam('sysparm_first_name', $scope.attendee.first_name);
+    ga.addParam('sysparm_last_name', $scope.attendee.last_name);
+    ga.addParam('sysparm_email', $scope.attendee.email);
+    ga.addParam('sysparm_contact_number', $scope.attendee.contact_number);
+    ga.addParam('sysparm_event_id', $scope.attendee.event_id);
+
+    ga.getXMLAnswer(function(response) {
+      console.log('Attendee Response: ' + response);
+      alert(response == 'success' ? 'Attendee registered!' : 'Failed: ' + response);
+    });
+  };
+
+  $scope.submitFeedback = function() {
+    var ga = new GlideAjax('CreateFeedbackProcessor');
+    ga.addParam('sysparm_name', 'createFeedbackRecord');
+    ga.addParam('sysparm_attendee_id', $scope.feedback.attendee_id);
+    ga.addParam('sysparm_rating', $scope.feedback.rating);
+    ga.addParam('sysparm_comments', $scope.feedback.comments);
+
+    ga.getXMLAnswer(function(response) {
+      console.log('Feedback Response: ' + response);
+      alert(response == 'success' ? 'Feedback submitted!' : 'Failed: ' + response);
+    });
+  };
+
+  $scope.submitVenue = function() {
+    var ga = new GlideAjax('CreateVenueProcessor');
+    ga.addParam('sysparm_name', 'createVenueRecord');
+    ga.addParam('sysparm_venue_name', $scope.venue.venue_name);
+    ga.addParam('sysparm_location', $scope.venue.location);
+    ga.addParam('sysparm_capacity', $scope.venue.capacity);
+    ga.addParam('sysparm_contact_person', $scope.venue.contact_person);
+    ga.addParam('sysparm_contact_number', $scope.venue.contact_number);
+
+    ga.getXMLAnswer(function(response) {
+      console.log('Venue Response: ' + response);
+      alert(response == 'success' ? 'Venue requested!' : 'Failed: ' + response);
+    });
+  };
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>&#13;
+  .tile-row {&#13;
+    display: flex;&#13;
+    justify-content: space-around;&#13;
+    margin-bottom: 20px;&#13;
+  }&#13;
+  .tile {&#13;
+    padding: 15px;&#13;
+    background-color: #f1f1f1;&#13;
+    border-radius: 10px;&#13;
+    cursor: pointer;&#13;
+    text-align: center;&#13;
+    flex: 1;&#13;
+    margin: 5px;&#13;
+    font-size: 16px;&#13;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);&#13;
+  }&#13;
+  .section {&#13;
+    border: 1px solid #ddd;&#13;
+    border-radius: 10px;&#13;
+    padding: 20px;&#13;
+    margin-top: 10px;&#13;
+  }&#13;
+  input, select, textarea, button {&#13;
+    display: block;&#13;
+    margin: 10px 0;&#13;
+    width: 100%;&#13;
+    padding: 10px;&#13;
+    border-radius: 5px;&#13;
+    border: 1px solid #ccc;&#13;
+  }&#13;
+  button {&#13;
+    background-color: #007bff;&#13;
+    color: white;&#13;
+    border: none;&#13;
+    cursor: pointer;&#13;
+  }&#13;
+  button:hover {&#13;
+    background-color: #0056b3;&#13;
+  }&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>event_management_form_section</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Event Management Form Section</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:16:30</sys_created_on>
+        <sys_id>917dc57f83c7a210c3b56730ceaad378</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Event Management Form Section</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_update_name>sp_widget_917dc57f83c7a210c3b56730ceaad378</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 22:12:27</sys_updated_on>
+        <template><![CDATA[<!-- Event Management Portal Widget Template -->
+<div class="form-section-container">
+  <!-- Tile Navigation -->
+  <div class="tile-row">
+    <div class="tile" ng-click="showSection('event')">]]>🎉<![CDATA[ Manage Events</div>
+    <div class="tile" ng-click="showSection('task')">✅ Assign Task</div>
+    <div class="tile" ng-click="showSection('attendee')">]]>👥<![CDATA[ Register Attendee</div>
+    <div class="tile" ng-click="showSection('feedback')">]]>📝<![CDATA[ Submit Feedback</div>
+    <div class="tile" ng-click="showSection('venue')">]]>🏢<![CDATA[ Venue Booking</div>
+  </div>
+
+  <!-- Event Form -->
+  <div class="section" ng-if="selectedSection === 'event'">
+    <h3>]]>🎉<![CDATA[ Event Creation</h3>
+    <input ng-model="event.event_name" placeholder="Event Name">
+    <input type="date" ng-model="event.event_date">
+    <input ng-model="event.location" placeholder="Location">
+    <input ng-model="event.contact_person" placeholder="Contact Person">
+    <input ng-model="event.contact_number" placeholder="Contact Number">
+    <input ng-model="event.email" placeholder="Email">
+    <select ng-model="event.status">
+      <option>Planned</option>
+      <option>Ongoing</option>
+      <option>Completed</option>
+    </select>
+    <button ng-click="submitEvent()">Submit</button>
+  </div>
+
+  <!-- Task Form -->
+  <div class="section" ng-if="selectedSection === 'task'">
+    <h3>✅ Task Assignment</h3>
+    <input ng-model="task.task_name" placeholder="Task Name">
+    <input type="date" ng-model="task.due_date">
+    <input ng-model="task.event_id" placeholder="Event ID">
+    <input ng-model="task.assignment_to" placeholder="Assigned To">
+    <button ng-click="submitTask()">Submit</button>
+  </div>
+
+  <!-- Attendee Form -->
+  <div class="section" ng-if="selectedSection === 'attendee'">
+    <h3>]]>👥<![CDATA[ Attendee Registration</h3>
+    <input ng-model="attendee.first_name" placeholder="First Name">
+    <input ng-model="attendee.last_name" placeholder="Last Name">
+    <input ng-model="attendee.email" placeholder="Email">
+    <input ng-model="attendee.contact_number" placeholder="Contact Number">
+    <input ng-model="attendee.event_id" placeholder="Event ID">
+    <button ng-click="submitAttendee()">Submit</button>
+  </div>
+
+  <!-- Feedback Form -->
+  <div class="section" ng-if="selectedSection === 'feedback'">
+    <h3>]]>📝<![CDATA[ Feedback Submission</h3>
+    <input ng-model="feedback.attendee_id" placeholder="Attendee ID">
+    <input ng-model="feedback.rating" placeholder="Rating">
+    <textarea ng-model="feedback.comments" placeholder="Comments"></textarea>
+    <button ng-click="submitFeedback()">Submit</button>
+  </div>
+
+  <!-- Venue Form -->
+  <div class="section" ng-if="selectedSection === 'venue'">
+    <h3>]]>🏢<![CDATA[ Venue Booking</h3>
+    <input ng-model="venue.venue_name" placeholder="Venue Name">
+    <input ng-model="venue.location" placeholder="Location">
+    <input ng-model="venue.capacity" placeholder="Capacity" type="number">
+    <input ng-model="venue.contact_person" placeholder="Contact Person">
+    <input ng-model="venue.contact_number" placeholder="Contact Number">
+    <button ng-click="submitVenue()">Submit</button>
+  </div>
+</div>
+
+]]></template>
+    </sp_widget>
+</record_update>

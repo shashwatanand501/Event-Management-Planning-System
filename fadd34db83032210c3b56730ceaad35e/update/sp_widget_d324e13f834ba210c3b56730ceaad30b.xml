@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function() {
+    /* widget controller */
+    var c = this;
+    c.markComplete = function(sys_id) {
+        var ga = new GlideAjax('TaskActionHandler');
+        a.addParam('sysparm_name', 'completeTask');
+        ga.addParam('sysparm_task_id', sys_id);
+        ga.getXMLAnswer(function(response) {
+            alert(response);
+            location.reload();
+        });
+    };
+    c.cancel = function(sys_id) {
+        var ga = new GlideAjax('TaskActionHandler');
+        ga.addParam('sysparm_name', 'cancelTask');
+        ga.addParam('sysparm_task_id', sys_id);
+        ga.getXMLAnswer(function(response) {
+            alert(response);
+            location.reload();
+        });
+    };
+
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>task_cancle_or_complete</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Task Cancle or complete</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  var tasks = [];
+  var gr = new GlideRecord('x_1790233_event_ma_event_task');
+  gr.addQuery('status', '!=', 'Completed'); // Only show ongoing or pending tasks
+  gr.addQuery('status', '!=', 'Cancelled');
+  gr.orderBy('due_date');
+  gr.query();
+
+  while (gr.next()) {
+    tasks.push({
+      sys_id: gr.getUniqueValue(),
+      name: gr.getValue('task_name'),
+      event: gr.getDisplayValue('event_id'),
+      due_date: gr.getDisplayValue('due_date'),
+      assigned_to: gr.getDisplayValue('assigned_to'),
+      status: gr.getValue('status')
+    });
+  }
+
+  data.tasks = tasks;
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 22:57:55</sys_created_on>
+        <sys_id>d324e13f834ba210c3b56730ceaad30b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Task Cancle or complete</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_update_name>sp_widget_d324e13f834ba210c3b56730ceaad30b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 22:57:55</sys_updated_on>
+        <template><![CDATA[<div class="task-section">
+  <h2>]]>📋<![CDATA[ Current Tasks</h2>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Event</th>
+        <th>Due Date</th>
+        <th>Assigned To</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="task in data.tasks">
+        <td>{{task.name}}</td>
+        <td>{{task.event}}</td>
+        <td>{{task.due_date}}</td>
+        <td>{{task.assigned_to}}</td>
+        <td>{{task.status}}</td>
+        <td>
+          <button class="btn btn-success btn-sm" ng-click="c.markComplete(task.sys_id)">Complete</button>
+          <button class="btn btn-danger btn-sm" ng-click="c.cancel(task.sys_id)">Cancel</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

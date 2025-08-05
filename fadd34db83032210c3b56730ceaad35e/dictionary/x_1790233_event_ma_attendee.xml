@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="db5341d383432210c3b56730ceaad3f3" extends="task" label="Attendee" max_length="40" name="x_1790233_event_ma_attendee" type="collection">
+        <element label="Work/Note" max_length="4000" name="work_note" type="journal"/>
+        <element label="Contact Number" max_length="40" name="contact_number" type="phone_number_e164"/>
+        <element label="Event ID" max_length="32" name="event_id" reference="x_1790233_event_ma_event_record" type="reference"/>
+        <element label="Last Name" max_length="40" name="last_name" type="string"/>
+        <element label="First Name" max_length="40" name="first_name" type="string"/>
+        <element label="is Attendee Check in" max_length="40" name="u_is_attendee_check_in" type="boolean"/>
+        <element label="Email ID" max_length="40" name="email_id" type="string"/>
+    </element>
+</database>

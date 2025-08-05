@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition">
+    <sys_ws_definition action="DELETE">
+        <active>true</active>
+        <base_uri>/api/x_1790233_event_ma/create_task</base_uri>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_version>No active default version</default_version>
+        <doc_link/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <is_versioned>false</is_versioned>
+        <name>Create Task</name>
+        <namespace>x_1790233_event_ma</namespace>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <service_id>create_task</service_id>
+        <short_description/>
+        <sys_class_name>sys_ws_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 03:09:46</sys_created_on>
+        <sys_id>203515e783476210c3b56730ceaad377</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Task</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_update_name>sys_ws_definition_203515e783476210c3b56730ceaad377</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 03:09:46</sys_updated_on>
+    </sys_ws_definition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</application>
+        <file_path/>
+        <instance_id>d54441903bf34218a36804e0b5e45a60</instance_id>
+        <instance_name>dev283592</instance_name>
+        <name>sys_ws_definition_203515e783476210c3b56730ceaad377</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/x_1790233_event_ma/create_task</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl><is_versioned>false</is_versioned><name>Create Task</name><namespace>x_1790233_event_ma</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>create_task</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-05 03:09:46</sys_created_on><sys_id>203515e783476210c3b56730ceaad377</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Create Task</sys_name><sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package><sys_policy/><sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope><sys_update_name>sys_ws_definition_203515e783476210c3b56730ceaad377</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-05 03:09:46</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+        <payload_hash>1508360140</payload_hash>
+        <record_name>Create Task</record_name>
+        <reverted_from/>
+        <source>707f795f83472210c3b56730ceaad3e4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 03:09:46</sys_created_on>
+        <sys_id>4f4595eb83476210c3b56730ceaad3d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1987834db660000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 03:09:46</sys_updated_on>
+        <type>Scripted REST API</type>
+        <update_guid>434595ebb347621048ca5462a92a70d6</update_guid>
+        <update_guid_history>434595ebb347621048ca5462a92a70d6:1508360140</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 03:10:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_ws_definition">sys_ws_definition</sys_db_object>
+        <sys_id>d329217d389c4c03a2a9889c4c3befa1</sys_id>
+        <sys_metadata>203515e783476210c3b56730ceaad377</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Task</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_scope_delete display_value="">2e0ac06773b641308e0af633db6c4840</sys_scope_delete>
+        <sys_update_name>sys_ws_definition_203515e783476210c3b56730ceaad377</sys_update_name>
+        <sys_update_version display_value="sys_ws_definition_203515e783476210c3b56730ceaad377">4f4595eb83476210c3b56730ceaad3d6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 03:10:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

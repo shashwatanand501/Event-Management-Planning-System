@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>handle_attendee_checkin_at_the_event</internal_name>
+        <label_cache>[{"name":"bbabd547-d195-4db9-9353-b912c03f04bc.Record","label":"1 - Look Up Record➛Attendee Record","reference":"x_1790233_event_ma_attendee","reference_display":"Attendee Record","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bbabd547-d195-4db9-9353-b912c03f04bc.Record.state","label":"1 - Look Up Record➛Attendee Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1790233_event_ma_attendee","column_name":"state","choices":[{"used":false,"image":"","label":"Pending","missing":false,"rawLabel":"Pending","selected":false,"reference":false,"value":"-5","parameters":{"name":"task"}},{"used":false,"image":"","label":"Open","missing":false,"rawLabel":"Open","selected":false,"reference":false,"value":"1","parameters":{"name":"task"}},{"used":false,"image":"","label":"Work in Progress","missing":false,"rawLabel":"Work in Progress","selected":false,"reference":false,"value":"2","parameters":{"name":"task"}},{"used":false,"image":"","label":"Closed Complete","missing":false,"rawLabel":"Closed Complete","selected":false,"reference":false,"value":"3","parameters":{"name":"task"}},{"used":false,"image":"","label":"Closed Incomplete","missing":false,"rawLabel":"Closed Incomplete","selected":false,"reference":false,"value":"4","parameters":{"name":"task"}},{"used":false,"image":"","label":"Closed Skipped","missing":false,"rawLabel":"Closed Skipped","selected":false,"reference":false,"value":"7","parameters":{"name":"task"}}],"usedInstances":{}},{"name":"bbabd547-d195-4db9-9353-b912c03f04bc.Record.u_is_attendee_check_in","label":"1 - Look Up Record➛Attendee Record➛is Attendee Check in","reference":"","reference_display":"is Attendee Check in","type":"boolean","base_type":"boolean","parent_table_name":"x_1790233_event_ma_attendee","column_name":"u_is_attendee_check_in","usedInstances":{"fe7383e9-f3de-41e5-ac31-d032da66475c":["condition"]}},{"name":"bbabd547-d195-4db9-9353-b912c03f04bc.Record.assigned_to.email","label":"1 - Look Up Record➛Attendee Record➛Assigned to➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"1be238d2-d2bd-4625-a910-57e337fdd61e":["ah_to"]}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Handle attendee check-in at the event.</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 09:51:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>145176ab830f6210c3b56730ceaad3d5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Handle attendee check-in at the event.</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_update_name>sys_hub_flow_145176ab830f6210c3b56730ceaad3d5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 10:00:17</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=145176ab830f6210c3b56730ceaad3d5"/>
+    <sys_variable_value action="delete_multiple" query="document_key=145176ab830f6210c3b56730ceaad3d5"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=145176ab830f6210c3b56730ceaad3d5^sys_idNOT IN5043726f830f6210c3b56730ceaad32a"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Handle attendee check-in at the event.">145176ab830f6210c3b56730ceaad3d5</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 10:00:16</sys_created_on>
+        <sys_id>5043726f830f6210c3b56730ceaad32a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 10:00:16</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5043726f830f6210c3b56730ceaad32a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>5043726f830f6210c3b56730ceaad32a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 10:00:16</sys_created_on>
+        <sys_id>1843726f830f6210c3b56730ceaad32b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 10:00:16</sys_updated_on>
+        <value>1970-01-01 09:00:00</value>
+        <variable display_value="Time">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_89142dc0c32222002841b63b12d3ae8a^id=5043726f830f6210c3b56730ceaad32a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=145176ab830f6210c3b56730ceaad3d5"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=145176ab830f6210c3b56730ceaad3d5^sys_idNOT IN9c5176ab830f6210c3b56730ceaad3d5"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>145176ab830f6210c3b56730ceaad3d5</id>
+        <name>Handle attendee check-in at the event.</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 09:51:48</sys_created_on>
+        <sys_id>9c5176ab830f6210c3b56730ceaad3d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 09:51:48</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9c5176ab830f6210c3b56730ceaad3d5"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=145176ab830f6210c3b56730ceaad3d5"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=145176ab830f6210c3b56730ceaad3d5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=145176ab830f6210c3b56730ceaad3d5"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=145176ab830f6210c3b56730ceaad3d5^sys_idNOT IN9043726f830f6210c3b56730ceaad34c,e443726f830f6210c3b56730ceaad359"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Handle attendee check-in at the event.">145176ab830f6210c3b56730ceaad3d5</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 10:00:16</sys_created_on>
+        <sys_id>9043726f830f6210c3b56730ceaad34c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 10:00:16</sys_updated_on>
+        <ui_id>bbabd547-d195-4db9-9353-b912c03f04bc</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9043726f830f6210c3b56730ceaad34c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9043726f830f6210c3b56730ceaad34c</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 10:00:16</sys_created_on>
+        <sys_id>9843726f830f6210c3b56730ceaad34e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 10:00:16</sys_updated_on>
+        <value>x_1790233_event_ma_attendee</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3^id=9043726f830f6210c3b56730ceaad34c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9043726f830f6210c3b56730ceaad34c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9043726f830f6210c3b56730ceaad34c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Handle attendee check-in at the event.">145176ab830f6210c3b56730ceaad3d5</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>fe7383e9-f3de-41e5-ac31-d032da66475c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 10:00:17</sys_created_on>
+        <sys_id>e443726f830f6210c3b56730ceaad359</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 10:00:17</sys_updated_on>
+        <ui_id>1be238d2-d2bd-4625-a910-57e337fdd61e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e443726f830f6210c3b56730ceaad359"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e443726f830f6210c3b56730ceaad359</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 10:00:17</sys_created_on>
+        <sys_id>2443726f830f6210c3b56730ceaad35c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 10:00:17</sys_updated_on>
+        <value>Test</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e443726f830f6210c3b56730ceaad359</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 10:00:17</sys_created_on>
+        <sys_id>6043726f830f6210c3b56730ceaad35c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 10:00:17</sys_updated_on>
+        <value>&lt;p&gt;&lt;span style="white-space: pre;"&gt;Test&lt;/span&gt;&lt;/p&gt;</value>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e443726f830f6210c3b56730ceaad359"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>e443726f830f6210c3b56730ceaad359</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 10:00:17</sys_created_on>
+        <sys_id>2c43726f830f6210c3b56730ceaad35b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 10:00:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>e443726f830f6210c3b56730ceaad359</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 10:00:17</sys_created_on>
+        <sys_id>ec43726f830f6210c3b56730ceaad35b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 10:00:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>e443726f830f6210c3b56730ceaad359</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 10:00:17</sys_created_on>
+        <sys_id>6843726f830f6210c3b56730ceaad35b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 10:00:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{bbabd547-d195-4db9-9353-b912c03f04bc.Record.assigned_to.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e443726f830f6210c3b56730ceaad359"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e443726f830f6210c3b56730ceaad359"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=145176ab830f6210c3b56730ceaad3d5"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=145176ab830f6210c3b56730ceaad3d5^sys_idNOT IN9843726f830f6210c3b56730ceaad34f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1043726f830f6210c3b56730ceaad34f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Handle attendee check-in at the event.">145176ab830f6210c3b56730ceaad3d5</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 10:00:16</sys_created_on>
+        <sys_id>9843726f830f6210c3b56730ceaad34f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 10:00:16</sys_updated_on>
+        <ui_id>fe7383e9-f3de-41e5-ac31-d032da66475c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9843726f830f6210c3b56730ceaad34f"/>
+    <sys_element_mapping action="delete_multiple" query="id=9843726f830f6210c3b56730ceaad34f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>9843726f830f6210c3b56730ceaad34f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 10:00:16</sys_created_on>
+        <sys_id>5043726f830f6210c3b56730ceaad353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 10:00:16</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{bbabd547-d195-4db9-9353-b912c03f04bc.Record.u_is_attendee_check_in}}=true</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9843726f830f6210c3b56730ceaad34f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9843726f830f6210c3b56730ceaad34f"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=145176ab830f6210c3b56730ceaad3d5"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=145176ab830f6210c3b56730ceaad3d5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_145176ab830f6210c3b56730ceaad3d5"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_145176ab830f6210c3b56730ceaad3d5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_145176ab830f6210c3b56730ceaad3d5"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_145176ab830f6210c3b56730ceaad3d5"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=145176ab830f6210c3b56730ceaad3d5"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=145176ab830f6210c3b56730ceaad3d5"/>
+</record_update>

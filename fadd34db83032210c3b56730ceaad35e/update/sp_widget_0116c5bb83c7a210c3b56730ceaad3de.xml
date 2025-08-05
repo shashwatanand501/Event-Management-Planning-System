@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.dashboard-summary {&#13;
+  display: grid;&#13;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));&#13;
+  gap: 20px;&#13;
+  padding: 20px;&#13;
+}&#13;
+&#13;
+.dashboard-summary .tile {&#13;
+  background: #1f2937;&#13;
+  color: #fff;&#13;
+  padding: 25px;&#13;
+  text-align: center;&#13;
+  border-radius: 8px;&#13;
+  font-size: 1.2rem;&#13;
+  font-weight: bold;&#13;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);&#13;
+  transition: transform 0.2s ease;&#13;
+}&#13;
+&#13;
+.dashboard-summary .tile span {&#13;
+  display: block;&#13;
+  font-size: 2rem;&#13;
+  margin-top: 10px;&#13;
+  color: #0d6efd;&#13;
+}&#13;
+&#13;
+.dashboard-summary .tile:hover {&#13;
+  transform: scale(1.05);&#13;
+}&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>event_dashboard_summary</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Event Dashboard Summary</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  data.counts = {};
+
+  var grEvent = new GlideRecord('x_1790233_event_ma_event_record');
+  grEvent.query();
+  data.counts.events = grEvent.getRowCount();
+
+  var grTask = new GlideRecord('x_1790233_event_ma_event_task');
+  grTask.query();
+  data.counts.tasks = grTask.getRowCount();
+
+  var grAttendee = new GlideRecord('x_1790233_event_ma_attendee');
+  grAttendee.query();
+  data.counts.attendees = grAttendee.getRowCount();
+
+  var grVendor = new GlideRecord('x_1790233_event_ma_vendor');
+  grVendor.query();
+  data.counts.vendors = grVendor.getRowCount();
+
+  var grBudget = new GlideRecord('x_1790233_event_ma_budget');
+  grBudget.query();
+  data.counts.budget = grBudget.getRowCount();
+
+  var grSchedule = new GlideRecord('x_1790233_event_ma_schedule');
+  grSchedule.query();
+  data.counts.schedule = grSchedule.getRowCount();
+
+  var grFeedback = new GlideRecord('x_1790233_event_ma_feedback');
+  grFeedback.query();
+  data.counts.feedback = grFeedback.getRowCount();
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 20:44:33</sys_created_on>
+        <sys_id>0116c5bb83c7a210c3b56730ceaad3de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Dashboard Summary</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_update_name>sp_widget_0116c5bb83c7a210c3b56730ceaad3de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:44:33</sys_updated_on>
+        <template><![CDATA[<div class="dashboard-summary">
+  <div class="tile">]]>🎉<![CDATA[ Events<br><span>{{data.counts.events}}</span></div>
+  <div class="tile">]]>📋<![CDATA[ Tasks<br><span>{{data.counts.tasks}}</span></div>
+  <div class="tile">]]>👥<![CDATA[ Attendees<br><span>{{data.counts.attendees}}</span></div>
+  <div class="tile">]]>🏢<![CDATA[ Vendors<br><span>{{data.counts.vendors}}</span></div>
+  <div class="tile">]]>💰<![CDATA[ Budget<br><span>{{data.counts.budget}}</span></div>
+  <div class="tile">]]>🕒<![CDATA[ Schedule<br><span>{{data.counts.schedule}}</span></div>
+  <div class="tile">]]>📝<![CDATA[ Feedback<br><span>{{data.counts.feedback}}</span></div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

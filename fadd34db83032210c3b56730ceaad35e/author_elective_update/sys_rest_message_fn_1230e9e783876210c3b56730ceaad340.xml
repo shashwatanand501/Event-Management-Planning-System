@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>Create Attendee</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Notify External - Event [ Create Attendee ]</qualified_name>
+        <rest_endpoint>https://webhook.site/b8631dfa-c8c9-4926-8446-e696947d57d3</rest_endpoint>
+        <rest_message display_value="Notify External - Event">9fd719af83476210c3b56730ceaad35a</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 03:58:22</sys_created_on>
+        <sys_id>1230e9e783876210c3b56730ceaad340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Attendee</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_update_name>sys_rest_message_fn_1230e9e783876210c3b56730ceaad340</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 03:58:22</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</application>
+        <file_path/>
+        <instance_id>d54441903bf34218a36804e0b5e45a60</instance_id>
+        <instance_name>dev283592</instance_name>
+        <name>sys_rest_message_fn_1230e9e783876210c3b56730ceaad340</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Create Attendee</function_name><http_method>post</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>Notify External - Event [ Create Attendee ]</qualified_name><rest_endpoint>https://webhook.site/b8631dfa-c8c9-4926-8446-e696947d57d3</rest_endpoint><rest_message display_value="Notify External - Event">9fd719af83476210c3b56730ceaad35a</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-05 03:58:22</sys_created_on><sys_id>1230e9e783876210c3b56730ceaad340</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Create Attendee</sys_name><sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package><sys_policy/><sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope><sys_update_name>sys_rest_message_fn_1230e9e783876210c3b56730ceaad340</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-05 03:58:22</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>-1334439637</payload_hash>
+        <record_name>Create Attendee</record_name>
+        <reverted_from/>
+        <source>707f795f83472210c3b56730ceaad3e4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 03:58:22</sys_created_on>
+        <sys_id>c360292b83876210c3b56730ceaad3a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19878615b080000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 03:58:22</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>c760292be4876210d9f502a43a5b06a1</update_guid>
+        <update_guid_history>c760292be4876210d9f502a43a5b06a1:-1334439637</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 04:09:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>8cb0065375224714b630e7c3a2b3a8a4</sys_id>
+        <sys_metadata>1230e9e783876210c3b56730ceaad340</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Attendee</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_parent display_value="Notify External - Event">9fd719af83476210c3b56730ceaad35a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_scope_delete display_value="">2e0ac06773b641308e0af633db6c4840</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_1230e9e783876210c3b56730ceaad340</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_1230e9e783876210c3b56730ceaad340">c360292b83876210c3b56730ceaad3a2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 04:09:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

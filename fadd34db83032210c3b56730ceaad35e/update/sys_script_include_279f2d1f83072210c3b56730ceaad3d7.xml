@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1790233_event_ma.fetchdetailsfromeventrecordtable</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>fetchdetailsfromeventrecordtable</name>
+        <script><![CDATA[var fetchdetailsfromeventrecordtable = Class.create();
+fetchdetailsfromeventrecordtable.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    fetchEventDetails: function() {
+        var eventId = this.getParameter('sysparm_event_id');
+        var gr = new GlideRecord('x_1790233_event_ma_event_record');
+        gr.addQuery('sys_id', eventId);
+        gr.query();
+
+        if (gr.next()) {
+            var res = {
+                taskName: gr.getValue('event_name'),
+                location: gr.getValue('location'),
+                email: gr.getValue('email'),
+				isVIP:gr.getValue('u_is_vip')
+            };
+            return JSON.stringify(res);
+        } else {
+            return JSON.stringify({
+                error: 'No data found'
+            });
+        }
+    },
+
+    type: 'fetchdetailsfromeventrecordtable'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 10:42:23</sys_created_on>
+        <sys_id>279f2d1f83072210c3b56730ceaad3d7</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>fetchdetailsfromeventrecordtable</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_update_name>sys_script_include_279f2d1f83072210c3b56730ceaad3d7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 11:20:48</sys_updated_on>
+    </sys_script_include>
+</record_update>

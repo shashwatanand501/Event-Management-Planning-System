@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1790233_event_ma.CreateEventProcessor</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CreateEventProcessor</name>
+        <script><![CDATA[var CreateEventProcessor = Class.create();
+CreateEventProcessor.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+  createEventRecord: function() {
+    try {
+      // Get parameters from the client-side GlideAjax call
+      var eventName = this.getParameter('sysparm_event_name');
+      var eventDate = this.getParameter('sysparm_event_date');
+      var location = this.getParameter('sysparm_location');
+      var contactPerson = this.getParameter('sysparm_contact_person');
+      var contactNumber = this.getParameter('sysparm_contact_number');
+      var email = this.getParameter('sysparm_email');
+      var status = this.getParameter('sysparm_status');
+
+      var gr = new GlideRecord('x_1790233_event_ma_event_record');
+      gr.initialize();
+      gr.setValue('event_name', eventName);
+      gr.setValue('event_date', eventDate);
+      gr.setValue('location', location);
+      gr.setValue('contact_person', contactPerson);
+      gr.setValue('contact_number', contactNumber);
+      gr.setValue('email', email);
+      gr.setValue('u_event_state', status); 
+
+      var sys_id = gr.insert();
+
+      if (sys_id) {
+        return "success";
+      } else {
+        return "fail";
+      }
+
+    } catch (e) {
+      // Log error for server logs
+      gs.error("CreateEventProcessor Error: " + e.message);
+      return "error: " + e.message;
+    }
+  },
+
+  type: 'CreateEventProcessor'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 21:28:57</sys_created_on>
+        <sys_id>6dc05937830ba210c3b56730ceaad37d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>CreateEventProcessor</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_update_name>sys_script_include_6dc05937830ba210c3b56730ceaad37d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 22:06:07</sys_updated_on>
+    </sys_script_include>
+</record_update>

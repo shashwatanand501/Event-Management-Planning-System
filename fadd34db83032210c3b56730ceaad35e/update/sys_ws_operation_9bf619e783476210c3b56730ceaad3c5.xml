@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Create Attendee</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+var gr = new GlideRecord('x_1790233_event_ma_attendee');
+    gr.initialize();
+    gr.setValue('first_name', body.first_name);
+    gr.setValue('last_name', body.last_name);
+    gr.setValue('email', body.email);
+    gr.setValue('contact_number', body.contact_number);
+    gr.setValue('event_id', body.event_id);
+    gr.insert();
+
+    response.setStatus(201);
+    return { result: "Attendee registered successfully" };
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1790233_event_ma/event_api/create_attendee</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/create_attendee</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 03:18:08</sys_created_on>
+        <sys_id>9bf619e783476210c3b56730ceaad3c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Attendee</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_update_name>sys_ws_operation_9bf619e783476210c3b56730ceaad3c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 03:18:08</sys_updated_on>
+        <web_service_definition display_value="Event API">d8a191e783476210c3b56730ceaad340</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

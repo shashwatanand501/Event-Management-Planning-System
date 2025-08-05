@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="5bc7999f83832210c3b56730ceaad322" extends="task" label="Event Task" max_length="40" name="x_1790233_event_ma_event_task" type="collection">
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in progress"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="completed"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="3" value="cancelled"/>
+                <element inactive_on_update="false" label="Not Started" sequence="0" value="not started"/>
+            </choice>
+        </element>
+        <element label="Is VIP" max_length="40" name="u_is_vip" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Event Coordinator" max_length="32" name="u_event_coordinator" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,audit=true" label="Task Name" max_length="255" name="u_task_name" type="string_full_utf8"/>
+        <element label="Assignment To" max_length="32" name="assignment_to" reference="sys_user" type="reference"/>
+        <element label="Work/Note" max_length="4000" name="work_note" type="journal"/>
+        <element label="Event ID" max_length="32" name="event_id" reference="x_1790233_event_ma_event_record" type="reference"/>
+    </element>
+</database>

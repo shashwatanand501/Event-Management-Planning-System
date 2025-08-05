@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Contact Information:" section_id="58cb059f83432210c3b56730ceaad315" sys_domain="global" table="x_1790233_event_ma_event_task" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_contact_person</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 07:55:30</sys_created_on>
+            <sys_id>871d011383832210c3b56730ceaad3a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Information:" display_value="Contact Information:" name="x_1790233_event_ma_event_task" sys_domain="global" view="Default view">58cb059f83432210c3b56730ceaad315</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 07:55:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email_id</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 07:55:30</sys_created_on>
+            <sys_id>0f1d011383832210c3b56730ceaad3a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Information:" display_value="Contact Information:" name="x_1790233_event_ma_event_task" sys_domain="global" view="Default view">58cb059f83432210c3b56730ceaad315</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 07:55:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>conatact_number</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 07:55:30</sys_created_on>
+            <sys_id>831d011383832210c3b56730ceaad3a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Information:" display_value="Contact Information:" name="x_1790233_event_ma_event_task" sys_domain="global" view="Default view">58cb059f83432210c3b56730ceaad315</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 07:55:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 07:55:30</sys_created_on>
+            <sys_id>0b1d011383832210c3b56730ceaad3a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Information:" display_value="Contact Information:" name="x_1790233_event_ma_event_task" sys_domain="global" view="Default view">58cb059f83432210c3b56730ceaad315</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 07:55:30</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contact_person</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 07:55:30</sys_created_on>
+            <sys_id>8f1d011383832210c3b56730ceaad3a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Contact Information:" display_value="Contact Information:" name="x_1790233_event_ma_event_task" sys_domain="global" view="Default view">58cb059f83432210c3b56730ceaad315</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 07:55:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Contact Information:</caption>
+            <header>false</header>
+            <name>x_1790233_event_ma_event_task</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-04 07:49:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>58cb059f83432210c3b56730ceaad315</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1790233_event_ma_event_task</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+            <sys_update_name>sys_ui_section_58cb059f83432210c3b56730ceaad315</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-04 07:49:35</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</application>
+        <file_path/>
+        <instance_id>d54441903bf34218a36804e0b5e45a60</instance_id>
+        <instance_name>dev283592</instance_name>
+        <name>sys_ui_section_58cb059f83432210c3b56730ceaad315</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Contact Information:" section_id="58cb059f83432210c3b56730ceaad315" sys_domain="global" table="x_1790233_event_ma_event_task" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>u_contact_person</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-04 07:55:30</sys_created_on><sys_id>871d011383832210c3b56730ceaad3a6</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Contact Information:" display_value="Contact Information:" name="x_1790233_event_ma_event_task" sys_domain="global" view="Default view">58cb059f83432210c3b56730ceaad315</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-04 07:55:30</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>email_id</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-04 07:55:30</sys_created_on><sys_id>0f1d011383832210c3b56730ceaad3a6</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Contact Information:" display_value="Contact Information:" name="x_1790233_event_ma_event_task" sys_domain="global" view="Default view">58cb059f83432210c3b56730ceaad315</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-04 07:55:30</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>conatact_number</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-04 07:55:30</sys_created_on><sys_id>831d011383832210c3b56730ceaad3a7</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Contact Information:" display_value="Contact Information:" name="x_1790233_event_ma_event_task" sys_domain="global" view="Default view">58cb059f83432210c3b56730ceaad315</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-04 07:55:30</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-04 07:55:30</sys_created_on><sys_id>0b1d011383832210c3b56730ceaad3a7</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Contact Information:" display_value="Contact Information:" name="x_1790233_event_ma_event_task" sys_domain="global" view="Default view">58cb059f83432210c3b56730ceaad315</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-04 07:55:30</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>contact_person</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-04 07:55:30</sys_created_on><sys_id>8f1d011383832210c3b56730ceaad3a7</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Contact Information:" display_value="Contact Information:" name="x_1790233_event_ma_event_task" sys_domain="global" view="Default view">58cb059f83432210c3b56730ceaad315</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-04 07:55:30</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Contact Information:</caption><header>false</header><name>x_1790233_event_ma_event_task</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-04 07:49:35</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>58cb059f83432210c3b56730ceaad315</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1790233_event_ma_event_task</sys_name><sys_overrides/><sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package><sys_policy/><sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope><sys_update_name>sys_ui_section_58cb059f83432210c3b56730ceaad315</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-04 07:49:35</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1078397802</payload_hash>
+        <record_name>Event Task</record_name>
+        <reverted_from/>
+        <source>b2c1855383432210c3b56730ceaad340</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 07:55:30</sys_created_on>
+        <sys_id>cf1d011383832210c3b56730ceaad3a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198741419130000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 07:55:30</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>871d011351832210afdce5b673ab6ba9</update_guid>
+        <update_guid_history>871d011351832210afdce5b673ab6ba9:1078397802,99ecc9dfa8432210148526ee2e1d1d71:-27772532,68cb059f7e432210e493465282da2b9c:62677419</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 08:38:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>d30bd06072f540babe2ddc96a91da624</sys_id>
+        <sys_metadata>58cb059f83432210c3b56730ceaad315</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Contact Information:</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_parent display_value="">fe534d9383432210c3b56730ceaad335</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_scope_delete display_value="">2e0ac06773b641308e0af633db6c4840</sys_scope_delete>
+        <sys_update_name>sys_ui_section_58cb059f83432210c3b56730ceaad315</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_58cb059f83432210c3b56730ceaad315">cf1d011383832210c3b56730ceaad3a9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 08:38:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

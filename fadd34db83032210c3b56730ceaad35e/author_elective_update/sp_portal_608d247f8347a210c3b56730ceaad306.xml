@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="DELETE">
+        <css_variables/>
+        <dark_theme/>
+        <default>false</default>
+        <enable_ais>false</enable_ais>
+        <enable_certificate_based_authentication>false</enable_certificate_based_authentication>
+        <enable_favorites>false</enable_favorites>
+        <hide_portal_name>false</hide_portal_name>
+        <homepage display_value="home_page_title">144dac3f8347a210c3b56730ceaad3f7</homepage>
+        <icon/>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page/>
+        <logo/>
+        <notfound_page/>
+        <quick_start_config/>
+        <rtl_enabled>false</rtl_enabled>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <search_application/>
+        <search_results_configuration/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu display_value="Event Management Menus">a95164bf8307a210c3b56730ceaad3ac</sp_rectangle_menu>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 19:03:17</sys_created_on>
+        <sys_id>608d247f8347a210c3b56730ceaad306</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Event Management Portal</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_update_name>sp_portal_608d247f8347a210c3b56730ceaad306</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:06:54</sys_updated_on>
+        <theme display_value="La Jolla">a7a6e78277002300a6e592718a10617a</theme>
+        <title>Event Management Portal</title>
+        <ts_index_group/>
+        <url_suffix>event-management</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="DELETE" query="documentkey=608d247f8347a210c3b56730ceaad306"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</application>
+        <file_path/>
+        <instance_id>d54441903bf34218a36804e0b5e45a60</instance_id>
+        <instance_name>dev283592</instance_name>
+        <name>sp_portal_608d247f8347a210c3b56730ceaad306</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal"><sp_portal action="INSERT_OR_UPDATE"><css_variables/><dark_theme/><default>false</default><enable_ais>false</enable_ais><enable_certificate_based_authentication>false</enable_certificate_based_authentication><enable_favorites>false</enable_favorites><hide_portal_name>false</hide_portal_name><homepage display_value="home_page_title">144dac3f8347a210c3b56730ceaad3f7</homepage><icon/><kb_knowledge_base/><kb_knowledge_page/><login_page/><logo/><notfound_page/><quick_start_config/><rtl_enabled>false</rtl_enabled><sc_catalog/><sc_catalog_page/><sc_category_page/><search_application/><search_results_configuration/><sp_chat_queue/><sp_rectangle_menu display_value="Event Management Menus">a95164bf8307a210c3b56730ceaad3ac</sp_rectangle_menu><sys_class_name>sp_portal</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-05 19:03:17</sys_created_on><sys_id>608d247f8347a210c3b56730ceaad306</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Event Management Portal</sys_name><sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package><sys_policy/><sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope><sys_update_name>sp_portal_608d247f8347a210c3b56730ceaad306</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-05 20:06:54</sys_updated_on><theme display_value="La Jolla">a7a6e78277002300a6e592718a10617a</theme><title>Event Management Portal</title><ts_index_group/><url_suffix>event-management</url_suffix></sp_portal><sys_translated_text action="delete_multiple" query="documentkey=608d247f8347a210c3b56730ceaad306"/></record_update>]]></payload>
+        <payload_hash>-459684507</payload_hash>
+        <record_name>Event Management Portal</record_name>
+        <reverted_from/>
+        <source>707f795f83472210c3b56730ceaad3e4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 20:06:54</sys_created_on>
+        <sys_id>661e307383c7a210c3b56730ceaad30b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1987bd811440000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:06:54</sys_updated_on>
+        <type>Service Portal</type>
+        <update_guid>ea1e307364c7a210bf9cab7a8182770a</update_guid>
+        <update_guid_history>ea1e307364c7a210bf9cab7a8182770a:-459684507,9d0eb4334fc7a21068a7da8afed6bea8:871435307,569dbc7fe987a21055c812bfed74af9b:-459684507,688df033c7c7a210bde4f640a94896fe:-1271984081,6630b033d087a21037a0aa8e3b6b1fcf:-459684507,628fe8ffbc47a210478b379f4c415915:-1853724963</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Event Management Portal">6e8ebc3383c7a210c3b56730ceaad3b0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 20:08:49</sys_created_on>
+        <sys_db_object display_value="" name="sp_portal">sp_portal</sys_db_object>
+        <sys_id>001d7ee78704461880003663b2901b90</sys_id>
+        <sys_metadata>608d247f8347a210c3b56730ceaad306</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event Management Portal</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_scope_delete display_value="">2e0ac06773b641308e0af633db6c4840</sys_scope_delete>
+        <sys_update_name>sp_portal_608d247f8347a210c3b56730ceaad306</sys_update_name>
+        <sys_update_version display_value="sp_portal_608d247f8347a210c3b56730ceaad306">661e307383c7a210c3b56730ceaad30b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:08:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

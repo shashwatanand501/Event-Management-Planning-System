@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope, spUtil) {
+  var c = this;
+
+  // Load the Event Dashboard Summary widget dynamically
+  spUtil.get('event_dashboard_summary').then(function(response) {
+    c.summaryWidget = response;
+  });
+
+  $scope.selectedSection = null;
+
+  $scope.showSection = function(section) {
+    $scope.selectedSection = section;
+  };
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.tile-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.tile {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.tile:hover {
+  background-color: #0d6efd;
+  transform: translateY(-5px);
+}
+
+.section-content {
+  background: #f9f9f9;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>event_management_home_page</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope) {
+  scope.selectedSection = null;
+
+  scope.showSection = function(section) {
+    scope.selectedSection = section;
+  };
+}
+]]></link>
+        <name>Event Management Home Page</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 20:21:35</sys_created_on>
+        <sys_id>3971493783c7a210c3b56730ceaad3af</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Event Management Home Page</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_update_name>sp_widget_3971493783c7a210c3b56730ceaad3af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:52:33</sys_updated_on>
+        <template><![CDATA[<div class="home-container">
+  <h1>Event Management Portal</h1>
+
+  <!-- TILES -->
+  <div class="tile-row">
+    <div class="tile" ng-click="showSection('analytics')">]]>📊<![CDATA[ Analytics Dashboard</div>
+    <div class="tile" ng-click="showSection('summary')">]]>🗂<![CDATA[️ Event Summary</div>
+    <div class="tile" ng-click="showSection('attendees')">]]>👥<![CDATA[ Attendees</div>
+  </div>
+
+  <!-- DYNAMIC SECTION -->
+  <div class="section-content" ng-if="selectedSection === 'analytics'">
+    <h2>]]>📊<![CDATA[ Analytics Dashboard</h2>
+    <iframe src="/$pa_dashboard.do?sysparm_dashboard=172efdeb830b6210c3b56730ceaad3f8"
+            width="100%" height="800px" frameborder="0"></iframe>
+  </div>
+
+  <div class="section-content" ng-if="selectedSection === 'summary'">
+  <h2>]]>🗂<![CDATA[️ Event Summary</h2>
+  <sp-widget widget="::c.summaryWidget"></sp-widget>
+</div>
+
+
+  <div class="section-content" ng-if="selectedSection === 'attendees'">
+    <h2>]]>👥<![CDATA[ Attendee List</h2>
+    <p>This section can show attendees or a custom table widget.</p>
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

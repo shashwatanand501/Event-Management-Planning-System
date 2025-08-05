@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.home-container {&#13;
+  max-width: 1200px;&#13;
+  margin: 0 auto;&#13;
+  padding: 40px;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+.tile-row {&#13;
+  display: flex;&#13;
+  justify-content: center;&#13;
+  flex-wrap: wrap;&#13;
+  gap: 20px;&#13;
+  margin-bottom: 40px;&#13;
+}&#13;
+&#13;
+.tile {&#13;
+  background-color: #1f2937;&#13;
+  color: #fff;&#13;
+  padding: 30px 40px;&#13;
+  border-radius: 10px;&#13;
+  font-size: 1.2rem;&#13;
+  font-weight: bold;&#13;
+  cursor: pointer;&#13;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);&#13;
+  transition: all 0.3s ease;&#13;
+}&#13;
+&#13;
+.tile:hover {&#13;
+  background-color: #0d6efd;&#13;
+  transform: translateY(-5px);&#13;
+}&#13;
+&#13;
+.section-content {&#13;
+  background: #f9f9f9;&#13;
+  padding: 40px;&#13;
+  border-radius: 10px;&#13;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);&#13;
+}&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>home_page_title</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope) {
+  scope.selectedSection = null;
+
+  scope.showSection = function(section) {
+    scope.selectedSection = section;
+  };
+}
+]]></link>
+        <name>Home Page Title</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 18:53:17</sys_created_on>
+        <sys_id>544dac3f8347a210c3b56730ceaad3f4</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Home Page Title</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_update_name>sp_widget_544dac3f8347a210c3b56730ceaad3f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:01:49</sys_updated_on>
+        <template><![CDATA[<div class="home-container">
+  <h1>Event Management Portal</h1>
+
+  <!-- TILES -->
+  <div class="tile-row">
+    <div class="tile" ng-click="showSection('analytics')">]]>📊<![CDATA[ Analytics Dashboard</div>
+    <div class="tile" ng-click="showSection('summary')">]]>🗂<![CDATA[️ Event Summary</div>
+    <div class="tile" ng-click="showSection('attendees')">]]>👥<![CDATA[ Attendees</div>
+  </div>
+
+  <!-- DYNAMIC SECTION -->
+  <div class="section-content" ng-if="selectedSection === 'analytics'">
+    <h2>]]>📊<![CDATA[ Analytics Dashboard</h2>
+    <iframe src="/$pa_dashboard.do?sysparm_dashboard=172efdeb830b6210c3b56730ceaad3f8"
+            width="100%" height="800px" frameborder="0"></iframe>
+  </div>
+
+  <div class="section-content" ng-if="selectedSection === 'summary'">
+    <h2>]]>🗂<![CDATA[️ Event Summary</h2>
+    <p>This section can show event summaries, charts, or other widgets.</p>
+  </div>
+
+  <div class="section-content" ng-if="selectedSection === 'attendees'">
+    <h2>]]>👥<![CDATA[ Attendee List</h2>
+    <p>This section can show attendees or a custom table widget.</p>
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</application>
+        <file_path/>
+        <instance_id>d54441903bf34218a36804e0b5e45a60</instance_id>
+        <instance_name>dev283592</instance_name>
+        <name>sp_widget_544dac3f8347a210c3b56730ceaad3f4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	
+};
+]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.home-container {&amp;#13;
+  max-width: 1200px;&amp;#13;
+  margin: 0 auto;&amp;#13;
+  padding: 40px;&amp;#13;
+  text-align: center;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.tile-row {&amp;#13;
+  display: flex;&amp;#13;
+  justify-content: center;&amp;#13;
+  flex-wrap: wrap;&amp;#13;
+  gap: 20px;&amp;#13;
+  margin-bottom: 40px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.tile {&amp;#13;
+  background-color: #1f2937;&amp;#13;
+  color: #fff;&amp;#13;
+  padding: 30px 40px;&amp;#13;
+  border-radius: 10px;&amp;#13;
+  font-size: 1.2rem;&amp;#13;
+  font-weight: bold;&amp;#13;
+  cursor: pointer;&amp;#13;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);&amp;#13;
+  transition: all 0.3s ease;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.tile:hover {&amp;#13;
+  background-color: #0d6efd;&amp;#13;
+  transform: translateY(-5px);&amp;#13;
+}&amp;#13;
+&amp;#13;
+.section-content {&amp;#13;
+  background: #f9f9f9;&amp;#13;
+  padding: 40px;&amp;#13;
+  border-radius: 10px;&amp;#13;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);&amp;#13;
+}&amp;#13;
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;home_page_title&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope) {
+  scope.selectedSection = null;
+
+  scope.showSection = function(section) {
+    scope.selectedSection = section;
+  };
+}
+]]&gt;&lt;/link&gt;&lt;name&gt;Home Page Title&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-05 18:53:17&lt;/sys_created_on&gt;&lt;sys_id&gt;544dac3f8347a210c3b56730ceaad3f4&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;Home Page Title&lt;/sys_name&gt;&lt;sys_package display_value="Event Management &amp;amp;amp; Planning System" source="x_1790233_event_ma"&gt;fadd34db83032210c3b56730ceaad35e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Event Management &amp;amp;amp; Planning System"&gt;fadd34db83032210c3b56730ceaad35e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_544dac3f8347a210c3b56730ceaad3f4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-05 20:01:49&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="home-container"&gt;
+  &lt;h1&gt;Event Management Portal&lt;/h1&gt;
+
+  &lt;!-- TILES --&gt;
+  &lt;div class="tile-row"&gt;
+    &lt;div class="tile" ng-click="showSection('analytics')"&gt;]]&gt;📊&lt;![CDATA[ Analytics Dashboard&lt;/div&gt;
+    &lt;div class="tile" ng-click="showSection('summary')"&gt;]]&gt;🗂&lt;![CDATA[️ Event Summary&lt;/div&gt;
+    &lt;div class="tile" ng-click="showSection('attendees')"&gt;]]&gt;👥&lt;![CDATA[ Attendees&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- DYNAMIC SECTION --&gt;
+  &lt;div class="section-content" ng-if="selectedSection === 'analytics'"&gt;
+    &lt;h2&gt;]]&gt;📊&lt;![CDATA[ Analytics Dashboard&lt;/h2&gt;
+    &lt;iframe src="/$pa_dashboard.do?sysparm_dashboard=172efdeb830b6210c3b56730ceaad3f8"
+            width="100%" height="800px" frameborder="0"&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+
+  &lt;div class="section-content" ng-if="selectedSection === 'summary'"&gt;
+    &lt;h2&gt;]]&gt;🗂&lt;![CDATA[️ Event Summary&lt;/h2&gt;
+    &lt;p&gt;This section can show event summaries, charts, or other widgets.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class="section-content" ng-if="selectedSection === 'attendees'"&gt;
+    &lt;h2&gt;]]&gt;👥&lt;![CDATA[ Attendee List&lt;/h2&gt;
+    &lt;p&gt;This section can show attendees or a custom table widget.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1499967221</payload_hash>
+        <record_name>Home Page Title</record_name>
+        <reverted_from/>
+        <source>707f795f83472210c3b56730ceaad3e4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 20:01:49</sys_created_on>
+        <sys_id>c0fc38ff8387a210c3b56730ceaad3de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1987bd369990000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:01:49</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>84fc387f4487a210d5a599e46461c1c0</update_guid>
+        <update_guid_history>84fc387f4487a210d5a599e46461c1c0:1499967221,f557b43b6887a210efd49a0532975d71:-1667455900,5be6703b0f87a210e29bbabc92142c15:-1328549616,d8b6b0f31287a210e25e75593030c6e0:1051690367,db64f8370487a2106d0ca6543a074226:1752192258,4444b077aa87a2105d07e6e9f13a35c5:-55668948,44d3bcf30587a210adc55b1583e1d6a9:-1020966336,4492f4335c87a210dd3febbf3092360b:760486402,5c82fcb3bb87a2104bad42ab8344e67b:1314090879,546da0bb2b47a210e3628fdb6a3866d5:-1464211300,504dac3f6a47a210ffaa133134a5cdf6:-1525360707</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Home Page Title">49b0413783c7a210c3b56730ceaad34d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 20:18:16</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>580897a8a3e74aef8e57ce5f7c94f6b1</sys_id>
+        <sys_metadata>544dac3f8347a210c3b56730ceaad3f4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Home Page Title</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_scope_delete display_value="">2e0ac06773b641308e0af633db6c4840</sys_scope_delete>
+        <sys_update_name>sp_widget_544dac3f8347a210c3b56730ceaad3f4</sys_update_name>
+        <sys_update_version display_value="sp_widget_544dac3f8347a210c3b56730ceaad3f4">c0fc38ff8387a210c3b56730ceaad3de</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:18:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1790233_event_ma.CheckEventLocation</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CheckEventLocation</name>
+        <script><![CDATA[var CheckEventLocation = Class.create();
+CheckEventLocation.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	isLocationAvailable:function(){
+		var location = this.getParameter('sysparm_location');
+        var date = this.getParameter('sysparm_event_date');
+        var gr = new GlideRecord('x_1790233_event_ma_event_record');
+        gr.addQuery('location', location);
+        gr.addQuery('event_date', date);
+        gr.query();
+        return gr.hasNext() ? 'false' : 'true';
+	},
+    type: 'CheckEventLocation'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 18:31:06</sys_created_on>
+        <sys_id>b33cd75f830f2210c3b56730ceaad3d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CheckEventLocation</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_update_name>sys_script_include_b33cd75f830f2210c3b56730ceaad3d2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 18:31:06</sys_updated_on>
+    </sys_script_include>
+</record_update>

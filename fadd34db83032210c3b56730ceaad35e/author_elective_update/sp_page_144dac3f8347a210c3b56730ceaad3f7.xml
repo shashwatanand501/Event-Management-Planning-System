@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="DELETE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <human_readable_url_structure/>
+        <id>home_page_title</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>true</public>
+        <roles/>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 18:53:18</sys_created_on>
+        <sys_id>144dac3f8347a210c3b56730ceaad3f7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>home_page_title</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_update_name>sp_page_144dac3f8347a210c3b56730ceaad3f7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:11:26</sys_updated_on>
+        <title>Home Page Title - Test Page</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="DELETE" query="documentkey=144dac3f8347a210c3b56730ceaad3f7"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</application>
+        <file_path/>
+        <instance_id>d54441903bf34218a36804e0b5e45a60</instance_id>
+        <instance_name>dev283592</instance_name>
+        <name>sp_page_144dac3f8347a210c3b56730ceaad3f7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><human_readable_url_structure/><id>home_page_title</id><internal>false</internal><omit_watcher>false</omit_watcher><public>true</public><roles/><seo_script/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-05 18:53:18</sys_created_on><sys_id>144dac3f8347a210c3b56730ceaad3f7</sys_id><sys_mod_count>1</sys_mod_count><sys_name>home_page_title</sys_name><sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package><sys_policy/><sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope><sys_update_name>sp_page_144dac3f8347a210c3b56730ceaad3f7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-05 20:11:26</sys_updated_on><title>Home Page Title - Test Page</title><use_seo_script>false</use_seo_script></sp_page><sys_translated_text action="delete_multiple" query="documentkey=144dac3f8347a210c3b56730ceaad3f7"/></record_update>]]></payload>
+        <payload_hash>776331868</payload_hash>
+        <record_name>home_page_title</record_name>
+        <reverted_from/>
+        <source>707f795f83472210c3b56730ceaad3e4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 20:11:26</sys_created_on>
+        <sys_id>452f74b383c7a210c3b56730ceaad379</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1987bdc39870000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:11:26</sys_updated_on>
+        <type>Page</type>
+        <update_guid>c92f74b35fc7a2109a82bf16751b8078</update_guid>
+        <update_guid_history>c92f74b35fc7a2109a82bf16751b8078:776331868,984dac3fa047a210622779f1f1eeb1f8:-1133926759</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="home_page_title">029005b383c7a210c3b56730ceaad372</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 20:17:49</sys_created_on>
+        <sys_db_object display_value="" name="sp_page">sp_page</sys_db_object>
+        <sys_id>6fea76aaf9fa426dbf8e3ba5b164e899</sys_id>
+        <sys_metadata>144dac3f8347a210c3b56730ceaad3f7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>home_page_title</sys_name>
+        <sys_package display_value="Event Management &amp;amp; Planning System" source="x_1790233_event_ma">fadd34db83032210c3b56730ceaad35e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Event Management &amp;amp; Planning System">fadd34db83032210c3b56730ceaad35e</sys_scope>
+        <sys_scope_delete display_value="">2e0ac06773b641308e0af633db6c4840</sys_scope_delete>
+        <sys_update_name>sp_page_144dac3f8347a210c3b56730ceaad3f7</sys_update_name>
+        <sys_update_version display_value="sp_page_144dac3f8347a210c3b56730ceaad3f7">452f74b383c7a210c3b56730ceaad379</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 20:17:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
